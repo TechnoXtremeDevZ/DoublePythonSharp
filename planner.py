@@ -6,6 +6,8 @@ from tkinter.filedialog import askopenfilename
 from collections import namedtuple
 Task = namedtuple("Task", ["title", "duration", "prerequisites"])
 
+
+
 def read_tasks(filename):
     tasks = {}
     for row in csv.reader(open(filename)):
